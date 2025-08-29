@@ -1,0 +1,369 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+    /* Transição para o modo noturno */
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    transition: color 0.5s ease-in-out;
+}
+
+/* Seção de Introdução (Hero) com Parallax */
+.hero {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2c3e50;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    color: #ecf0f1;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #bdc3c7;
+}
+
+.btn {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Seção Sobre Mim */
+.about {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #2c3e50;
+}
+
+.about-text {
+    text-align: left;
+}
+
+/* Estilos para as Novas Seções (Experiência, Formação, Certificações) */
+.experiencia, .formacao, .certificacoes {
+    padding: 20px 20px;
+    background-color: #ecf0f1;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.experiencia h2, .formacao h2, .certificacoes h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.experiencia h2::after, .formacao h2::after, .certificacoes h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #2c3e50;
+    border-radius: 2px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.job, .curso, .certificacao {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    border-left: 5px solid #2c3e50;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease-in-out;
+}
+
+.job:hover, .curso:hover, .certificacao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.job h3, .curso h3, .certificacao h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.empresa, .instituicao, .emissao {
+    font-style: italic;
+    color: #666;
+    margin-top: -10px;
+}
+
+.periodo, .local {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.job ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.job li {
+    margin-bottom: 5px;
+}
+
+/* Seção de Redes Sociais */
+.socials {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.socials h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+}
+
+/* Media Queries para Responsividade */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .profile-img {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+}
+
+/* Estilos para a Barra de Navegação */
+.navbar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    background-color: transparent;
+    padding: 0;
+    max-width: none;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+    letter-spacing: 0.1em;
+}
+
+.nav-link:hover {
+    color: #3498db;
+    letter-spacing: 0.2em;
+}
+
+/* Estilos para a Transição de Página */
+#main-content {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#main-content.fade-out {
+    opacity: 0;
+}
+
+/* Estilos para o Botão de Idioma e Modo Noturno */
+#language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#language-toggle img {
+    height: 30px;
+    width: auto;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+#language-toggle:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilo para o Botão de Modo Noturno */
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#dark-mode-toggle svg {
+    fill: #333;
+    transition: fill 0.3s ease;
+}
+
+#dark-mode-toggle:hover svg {
+    fill: white;
+}
+
+/* Estilos para o Botão no Modo Noturno */
+body.dark-mode #dark-mode-toggle {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode #dark-mode-toggle svg {
+    fill: #ccc;
+}
+
+body.dark-mode #dark-mode-toggle:hover svg {
+    fill: white;
+}
+
+/* Paleta de Cores do Modo Noturno (Sobreescreve as cores padrão) */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #cccccc;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #f5f5f5;
+}
+
+body.dark-mode .about {
+    background-color: #222222;
+}
+
+body.dark-mode .experiencia,
+body.dark-mode .formacao,
+body.dark-mode .certificacoes {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode .experiencia h2::after,
+body.dark-mode .formacao h2::after,
+body.dark-mode .certificacoes h2::after {
+    background-color: #3498db;
+}
+
+body.dark-mode .job,
+body.dark-mode .curso,
+body.dark-mode .certificacao {
+    background-color: #333333;
+    border-color: #3498db;
+}
+
+body.dark-mode .empresa, 
+body.dark-mode .instituicao, 
+body.dark-mode .emissao, 
+body.dark-mode .periodo, 
+body.dark-mode .local
