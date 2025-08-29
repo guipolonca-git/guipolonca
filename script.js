@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cert3Title: 'Escrita Total - Método de Escrita Criativa para Todo Texto',
             cert3Emissao: 'Udemy - Emitida em jul de 2023',
             cert3Comp: '**Competências:** Escrita criativa',
-            connect: 'Conecte-se comigo'
+            connect: 'Meus links'
         },
         en: {
             // English translations
@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
             professional: 'Professional',
             aboutIntro1: 'Not much to put here for now. You can check my social media or send me an email through the links below. There are film reviews, video essays, chronicles and also my LinkedIn, in case you came here for that. Hit me up!',
             aboutIntro2: 'If you want to find me somewhere else, you can look for <strong>@guipolonca</strong>. If you don\'t find me, it\'s because I\'m not there (or I don\'t want you to find me 👀)',
-            connect: 'Connect with me',
+            connect: 'My links',
 
             profSubtitle: 'Bilingual Educational Designer',
-            profIntro1: 'Graduated in Educational Design from the Federal University of São Paulo with nine years of experience in Educational Design, with competence for the process of writing, revising, and adapting didactic materials for the online environment. Experience as a Quality Analyst (QA), covering all aspects of didactic material, such as text adequacy, interfaces, responsiveness, and accessibility. I have worked in various educational areas, from free education to corporate and basic education.',
+            profIntro1: 'Graduated in Educational Design from the Federal University of São Paulo with nine years of experience in Educational Design, with competence for the process of writing, proof writing, and adapting didactic materials for the online environment. Experience as a Quality Analyst (QA), covering all aspects of didactic material, such as text adequacy, interfaces, responsiveness, and accessibility. I have worked in various educational areas, from free education to corporate and basic education.',
             profIntro2: 'For a little over a year, I have been working as a Bilingual Educational Designer, adapting international materials for the Brazilian public through translation, adaptation, and creation of specific content for this audience.',
             experienceTitle: 'Professional Experience',
             job1Title: 'Senior Curriculum Developer (Bilingual)',
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cert3Title: 'Total Writing - Creative Writing Method for All Text',
             cert3Emissao: 'Udemy - Issued July 2023',
             cert3Comp: '**Skills:** Creative writing',
-            connect: 'Connect with me'
+            connect: 'My links'
         }
     };
 
