@@ -371,6 +371,7 @@ body.dark-mode .local {
 }
 
 /* Media Query para telas pequenas (ex: celulares) */
+/* Media Query para telas pequenas (ex: celulares) */
 @media (max-width: 767px) {
     .hero {
         padding: 60px 20px;
@@ -394,10 +395,15 @@ body.dark-mode .local {
     }
 
     /* Regras de estilo para os ícones de redes sociais */
-    .socials {
+    .social-links {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Permite quebrar se não houver espaço, mas com as novas margens, deve evitar */
         justify-content: center;
-        gap: 20px;
+        /* Remover o 'gap' ou usar um 'gap' menor aqui se você já tiver margem nos links */
     }
+
+    .socials a {
+        margin: 0 8px; /* Margem reduzida para criar mais espaço entre os ícones */
+    }
+}
 }
