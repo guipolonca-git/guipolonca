@@ -383,20 +383,21 @@ body.dark-mode .local {
     .hero p {
         font-size: 1em;
     }
-	
-	    /* Regras de estilo para a barra de navegação */
+
+    /* Regras de estilo para a barra de navegação */
     .navbar {
-        margin-top: 40px; /* Aumenta o espaçamento do topo da barra */
+        margin-top: 40px;
     }
 
     .nav-link {
-        font-size: 1em; /* Diminui o tamanho da fonte */
+        font-size: 1em;
     }
-	
-	.socials {
+
+    /* Regras de estilo para os ícones de redes sociais */
+    .social-links {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px; /* Adiciona espaçamento entre os ícones */
+        gap: 20px;
     }
 }
