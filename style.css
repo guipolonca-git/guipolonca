@@ -394,7 +394,7 @@ body.dark-mode .local {
     }
 
     /* Regras de estilo para os ícones de redes sociais */
-    .social-links {
+    .socials {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
